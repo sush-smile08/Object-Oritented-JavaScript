@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // declaration function
+        function evenOrOdd(num){
+            if(num%2==0){
+                return "Even";
+            }
+            else{
+                return "Odd";
+            }
+        }
+        document.write(`Declaration function output: ${evenOrOdd(10)} <br>`);
+
+        //assigning function to a variable
+        var CheckEvenOrOdd = evenOrOdd;
+        document.write(`Assiging function to a variable output ${CheckEvenOrOdd(6)} <br>`);
+
+        //expression function
+        var evenOrOdd2 = function(num){
+            if(num%2==0){
+                return "Even";
+            }
+            else{
+                return "Odd";
+            } 
+        };
+        document.write(`Expression  function output: ${evenOrOdd2(5)}`);
+    </script>
+</body>
+</html>

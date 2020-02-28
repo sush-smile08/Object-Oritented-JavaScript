@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Argument use
+        function product(){
+            var result =1;
+
+            for(var i = 0; i < arguments.length; i++){
+                result *= arguments[i];
+            }
+
+            return result;
+        }
+        document.write(`${product(3,4,5)} <br>`);
+        document.write(`${product(9,8)} <br>`);
+        document.write(`${product(10)} <br>`);
+        document.write(product());
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Variable Argument
+        function evenOrOdd(num){
+            document.write(`Index 0: ${arguments[0]} <br>`);
+            document.write(`Argument length: ${arguments.length} <br>`);            
+            document.write(`Argument length: ${evenOrOdd.length} <br>`);
+            if(num%2==0){
+                return "Even";
+            }
+            else{
+                return "Odd";
+            }
+        }
+        var e = evenOrOdd;
+        document.write(`Variable Argument: ${e(10,20,30,40)} <br>`);
+    </script>
+</body>
+</html>

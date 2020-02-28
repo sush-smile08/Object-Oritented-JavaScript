@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function displayDetails(){
+            document.write(`Student Id: ${this.id} <br /> Student Name: ${this.name} <br />`);
+        }
+
+        var student1 = {
+            id: 1,
+            name: "Bob"
+        };
+
+        var student2 = {
+            id: 2,
+            name: "John"
+        };
+
+        this.id = 3;
+        this.name = "Mary";
+        displayDetails.call(student1);
+        displayDetails.call(student2);
+        displayDetails.call();
+        
+    </script>
+</body>
+</html>

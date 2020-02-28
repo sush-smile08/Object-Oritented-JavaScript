@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(num1, num2, num3){
+            return num1 + num2 + num3;
+        }
+
+        function add(num1,num2){
+            document.write(`Number of argument passed in this function is: ${arguments.length} <br>`);
+            return num1 + num2;
+        }
+
+        document.write(`Javascript engine picks last function: ${add(2,3,5)}`);
+    </script>
+</body>
+</html>
